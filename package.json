@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "debug": "DEBUG=metalsmith:* yarn run generate",
+    "generate": "./generate.sh",
+    "start": "DEVELOPMENT=true nf start",
+    "deploy": "yarn run generate && ./deploy.sh"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "css-mqpacker": "^6.0.0",
+    "del": "^3.0.0",
+    "ejs": "^2.5.2",
+    "foreman": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev-all": "^0.9.7",
+    "http-server": "^0.10.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-debug": "^1.1.0",
+    "metalsmith-feed": "^0.3.0",
+    "metalsmith-json-feed": "^1.0.0",
+    "metalsmith-layouts": "^1.7.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metallic": "^2.0.1",
+    "metalsmith-moment": "^1.0.0",
+    "metalsmith-permalinks": "^0.5.0",
+    "postcss-custom-properties": "^6.0.1",
+    "postcss-nested": "^2.0.2",
+    "sugarss": "^1.0.0"
+  }
+}

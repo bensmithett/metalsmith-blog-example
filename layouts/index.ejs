@@ -1,0 +1,9 @@
+<%- include('partials/top.ejs', {title: site.title, description: site.description}) %>
+
+<ul>
+  <% posts.forEach((post) => { %>
+    <li><a href='<%- site.url + post.path %>'><%- post.title %></a></li>
+  <% }) %>
+</ul>
+
+<%- include('partials/bottom.ejs') %>
